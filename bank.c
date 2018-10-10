@@ -1,4 +1,4 @@
-	#include<stdio.h>
+#include<stdio.h>
 
 	int tneed = 0,finish[20];
 
@@ -6,9 +6,9 @@
 
 		for (int i = 0; i < n; ++i)
 		{
-			int sum = 0;
+			int flag = 0;
 
-			if(finish[i] == 1) {
+			if(finish[i]) {
 
 				continue;
 
@@ -18,18 +18,15 @@
 			{
 				if (a[i][j] > b[j])
 				{
-					sum += 1;	
-				}
-				if ( j == m -1 ) {
-
-					if(sum == 0) {
-
-						return 0;
-
-					}
-
+					flag += 1;
 				}
 			}
+			if(flag != 3) {
+
+				return 0;
+
+			}
+
 		}
 		return 1;
 
@@ -88,7 +85,7 @@
 		printf("\n");
 		for( i = 0; i < n; i++) {
 
-			printf("P[%d]\t",i );
+			printf("P[%d]\t",i + 1);
 
 			for(j = 0; j < m; j++) {
 
@@ -112,7 +109,7 @@
 
 		for( i = 0; i < n; i++) {
 
-			printf("P[%d]\t",i );
+			printf("P[%d]\t",i + 1);
 
 			for(j = 0; j < m; j++) {
 
@@ -159,7 +156,7 @@
 				}
 
 			}
-			if(i == n-1)
+
 			if(deadlock(need,work,n,m)) {
 
 				printf("Deadlock!!!");
