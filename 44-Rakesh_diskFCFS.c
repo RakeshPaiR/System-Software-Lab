@@ -1,3 +1,4 @@
+// This program is intended to find the seek time occured using fcfs disk scheduling algorithm,
 #include<stdio.h>
 
 #include<math.h>
