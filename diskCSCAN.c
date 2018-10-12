@@ -147,6 +147,8 @@ int main(int argc, char const *argv[]) {
 
 	printf("Total Seek Time: %d\n", thm);
 
-	printf("Average Seek Time: %.2f\n",(float)thm/n);
+	printf("Average Seek Time: %.3f\n",(float)thm/n);
+	
+	printf("Disk Scan is completed");
 
 }
