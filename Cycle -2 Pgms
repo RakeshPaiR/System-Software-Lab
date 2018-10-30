@@ -1,0 +1,6 @@
+1. Implement Pass-1 of 2 pass assembler
+2. Implement Pass-2 of 2 pass assembler
+3. Implement a single pass assembler
+4. Implement a 2 pass macro processor
+5. Implement a symbol table with suitable hashing
+6. Implement an absolute loader
