@@ -103,7 +103,7 @@ int main(int argc, char const *argv[]) {
 					break;
 
 			case 6: if (dir_count == 0) {
-						printf("\n\tNothoing to display!!!");
+						printf("\n\tNothing to display!!!");
 
 					}
 					else {
